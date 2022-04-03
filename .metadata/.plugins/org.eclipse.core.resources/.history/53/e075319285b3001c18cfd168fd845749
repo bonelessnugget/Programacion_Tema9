@@ -1,0 +1,13 @@
+
+public class Escaños {
+	/*
+	 * @param N
+	 * N es el número de partidos que se presentan.
+	 */
+	private int[] N;
+	private int[] M;
+	
+	public Escaños(int N, int M) {
+		
+	}
+}

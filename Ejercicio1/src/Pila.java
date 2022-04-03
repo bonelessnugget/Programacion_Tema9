@@ -1,0 +1,45 @@
+
+public class Pila {
+	private int[] a;
+	private int cima;
+	private final int tamaño = 100;
+	
+	public Pila() {
+		a = new int[tamaño];
+	}
+	
+	public void push(int n) {
+		if (llena()) {
+			System.out.println("La pila esta llena.");
+		}else {
+			a[++cima] = n;
+		}
+	}
+	
+	public int pop() {
+		if (vacia()) {
+			System.out.println("La pila está vacía.");
+		}
+		return a[cima--];
+	}
+	
+	
+	public boolean vacia() {
+		return cima == -1;
+	}
+	
+	public boolean llena() {
+		return cima == tamaño -1;
+	}
+	
+	public int size() {
+		return cima + 1;
+	}
+	
+	public void verPila() {
+		for (int i = 0; i<a.length; i++) {
+			System.out.print(" " + a[i]);
+		}
+	}
+	
+}

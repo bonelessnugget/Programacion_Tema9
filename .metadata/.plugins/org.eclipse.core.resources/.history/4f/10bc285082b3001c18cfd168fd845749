@@ -1,0 +1,8 @@
+
+public class Pila {
+	private int[] a;
+	private int cima;
+	private final int tamaño = 100;
+	
+	
+}

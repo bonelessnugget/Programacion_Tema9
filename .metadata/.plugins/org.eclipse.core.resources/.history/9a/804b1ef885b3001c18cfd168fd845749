@@ -1,0 +1,13 @@
+
+public class Escaños {
+	/*
+	 * @param N Número de partidos que se presentan;
+	 * @param M Número de escaños por partido.
+	 */
+	private int[] N;
+	private int[] M;
+
+	public void datosEntrada() {
+		System.out.println("Cuántos partidos se presentan");
+	}
+}

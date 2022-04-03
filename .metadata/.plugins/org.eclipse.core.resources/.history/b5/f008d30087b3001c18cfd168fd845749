@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Escaños {
+	/*
+	 * @param N Número de partidos que se presentan;
+	 * @param M Número de escaños por partido.
+	 */
+	private int[] N;
+	private int[] M;
+	private int[] votos;
+	private Scanner teclado = new Scanner(System.in);
+	public void datosEntrada() { 
+		System.out.println("Cuántos partidos se presentan");
+		int numPartidos;
+		numPartidos = teclado.nextInt();
+		System.out.println();
+		N = new int[numPartidos];
+		votos = new int[numPartidos];
+		System.out.println("Cuántos votos ha conseguido cada partido");
+		for (int i = 0; i<=numPartidos; i++) {
+			System.out.println("Votos del primer partido: ");
+			
+		}
+		
+	}
+}
