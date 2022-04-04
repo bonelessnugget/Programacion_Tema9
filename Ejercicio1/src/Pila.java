@@ -1,45 +1,38 @@
+/**
+ * Clase generica de defeinicion de una pila con sus operaciones asociadas.
+ * Es un TAD LIFO
+ */
 
-public class Pila {
-	private int[] a;
-	private int cima;
-	private final int tamaño = 100;
-	
-	public Pila() {
-		a = new int[tamaño];
-	}
-	
-	public void push(int n) {
-		if (llena()) {
-			System.out.println("La pila esta llena.");
-		}else {
-			a[++cima] = n;
-		}
-	}
-	
-	public int pop() {
-		if (vacia()) {
-			System.out.println("La pila está vacía.");
-		}
-		return a[cima--];
-	}
+/**
+ * @author yszee
+ *
+ */
+public abstract class Pila {
 	
 	
-	public boolean vacia() {
-		return cima == -1;
-	}
+	/**
+	 * Número de elementos máximo que soporta la pila.
+	 */
+	public final int maxSize = 100;
 	
-	public boolean llena() {
-		return cima == tamaño -1;
-	}
 	
-	public int size() {
-		return cima + 1;
-	}
+	/**
+	 * Inserta un entero en la pila
+	 * @param x El número a insertar
+	 */
+	public abstract void push(int x);
 	
-	public void verPila() {
-		for (int i = 0; i<a.length; i++) {
-			System.out.print(" " + a[i]);
-		}
-	}
 	
+	/**
+	 * Extrar un entero de la pila
+	 * @return El número extraido.
+	 */
+	public abstract int pop();
+	
+	
+	/**
+	 * Devuelve el número de elementos que hay en la pila
+	 * @return El número de elementos en la pila.
+	 */
+	public abstract int size();
 }
